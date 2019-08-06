@@ -1,0 +1,13 @@
+<p-toolbar styleClass="headerContent">
+  <div class="ui-toolbar-group-left">
+    <h4 class="searchLabel">Search Books</h4>
+    <label class="userName">Wellcome {{userName}}</label>
+  </div>
+  <div class="ui-toolbar-group-right">
+    <div class="ui-inputgroup">
+      <input type="text" pInputText placeholder="Search" [(ngModel)]="inputsearch" (input)="onSearchChanged()">
+      <button pButton type="button" label="Search" (click)="onSearch()"></button>
+    </div>
+  </div>
+</p-toolbar>
+<app-content></app-content>

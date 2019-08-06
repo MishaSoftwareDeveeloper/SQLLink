@@ -1,0 +1,15 @@
+:host ::ng-deep .headerContent {
+  background-color: #c8c8c8;
+  border: unset !important;
+}
+
+.userName{
+  font-size:20px;
+  display:inline-block;
+  color:white;
+  margin-left:20px;
+}
+
+.searchLabel {
+  display: inline-block;
+}

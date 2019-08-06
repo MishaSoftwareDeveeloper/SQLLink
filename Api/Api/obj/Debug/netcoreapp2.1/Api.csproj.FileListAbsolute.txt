@@ -1,0 +1,14 @@
+C:\Users\misha.a\Desktop\VehiclesManagment\Api\Api\bin\Debug\netcoreapp2.1\Api.deps.json
+C:\Users\misha.a\Desktop\VehiclesManagment\Api\Api\bin\Debug\netcoreapp2.1\Api.runtimeconfig.json
+C:\Users\misha.a\Desktop\VehiclesManagment\Api\Api\bin\Debug\netcoreapp2.1\Api.runtimeconfig.dev.json
+C:\Users\misha.a\Desktop\VehiclesManagment\Api\Api\bin\Debug\netcoreapp2.1\Api.dll
+C:\Users\misha.a\Desktop\VehiclesManagment\Api\Api\bin\Debug\netcoreapp2.1\Api.pdb
+C:\Users\misha.a\Desktop\VehiclesManagment\Api\Api\obj\Debug\netcoreapp2.1\Api.csproj.CoreCompileInputs.cache
+C:\Users\misha.a\Desktop\VehiclesManagment\Api\Api\obj\Debug\netcoreapp2.1\Api.RazorAssemblyInfo.cache
+C:\Users\misha.a\Desktop\VehiclesManagment\Api\Api\obj\Debug\netcoreapp2.1\Api.RazorAssemblyInfo.cs
+C:\Users\misha.a\Desktop\VehiclesManagment\Api\Api\obj\Debug\netcoreapp2.1\Api.AssemblyInfoInputs.cache
+C:\Users\misha.a\Desktop\VehiclesManagment\Api\Api\obj\Debug\netcoreapp2.1\Api.AssemblyInfo.cs
+C:\Users\misha.a\Desktop\VehiclesManagment\Api\Api\obj\Debug\netcoreapp2.1\Api.RazorTargetAssemblyInfo.cache
+C:\Users\misha.a\Desktop\VehiclesManagment\Api\Api\obj\Debug\netcoreapp2.1\Api.dll
+C:\Users\misha.a\Desktop\VehiclesManagment\Api\Api\obj\Debug\netcoreapp2.1\Api.pdb
+C:\Users\misha.a\Desktop\VehiclesManagment\Api\Api\obj\Debug\netcoreapp2.1\Api.csprojAssemblyReference.cache

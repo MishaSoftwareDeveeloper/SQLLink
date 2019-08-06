@@ -1,0 +1,16 @@
+:host ::ng-deep .contentGrid .ui-dataview-content {
+  min-height: 735px;
+}
+.listItemsContent {
+  padding: 2em;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.list-details, .btnInfoBook {
+  margin-top: 4%;
+}
+
+.Image {
+  max-width: 200px;
+  max-height: 200px;
+}

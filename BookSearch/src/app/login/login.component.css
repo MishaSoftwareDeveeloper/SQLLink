@@ -1,0 +1,117 @@
+.bagroundLogin {
+  background: url('../../assets/images/loginbackground.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.loginForm {
+  margin: 16.5% 0 0 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+  .loginForm label {
+    color: rgba(245,245,245,0.8);
+    font: 600 21px Palatino, 'Palatino LT STD', 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
+    text-shadow: 0.1em 0.1em 0.15em black;
+    padding: 0.3em 0 0 38.5em;
+  }
+
+
+
+.field-icon {
+  font-size: 24px;
+  color: rgb(245,245,245);
+  margin: 0 0 0 -32px;
+  text-shadow: 0.1em 0.1em 0.15em black;
+  z-index: 6;
+}
+
+  .field-icon:hover {
+    cursor: pointer;
+  }
+
+@-webkit-keyframes autofill {
+  to {
+    color: #fff;
+    background: transparent;
+  }
+}
+
+.loginForm input:-webkit-autofill {
+  -webkit-animation-name: autofill;
+  -webkit-animation-fill-mode: both;
+}
+
+#userNameIcon {
+  display: inline-block;
+  height: 45px;
+  width: 35px;
+  background: url(../../assets/images/userBlack.png)no-repeat 0px 17px;
+  margin: 8px 0 0 0;
+}
+
+
+
+.loginForm #userName {
+  background: transparent;
+  outline: none;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  padding: 8px 9px 4px 12px;
+  border: none;
+  border-bottom: 1.5px solid black;
+  width: 18.5%;
+  display: inline-block;
+  margin: 0 0 0 0;
+}
+
+#passwordIcon {
+  display: inline-block;
+  height: 45px;
+  width: 35px;
+  background: url(../../assets/images/lockBlack.png)no-repeat 0px 17px;
+  margin: 8px 0 0 0;
+}
+
+.loginForm #passw {
+  background: transparent;
+  outline: none;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  padding: 8px 9px 6px 12px;
+  border: none;
+  border-bottom: 1.5px solid black;
+  margin: 0 0 0 0;
+  width: 18.5%;
+  display: inline-block;
+}
+
+.spPassword {
+  margin-top: 23px;
+}
+
+.submitArea {
+  margin: 3% 0 0 0;
+  width: 45%;
+}
+
+#loginBtn {
+  margin-top: 1px;
+  width: 35%;
+  text-align: center;
+}

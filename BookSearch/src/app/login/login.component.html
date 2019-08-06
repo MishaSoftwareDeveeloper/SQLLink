@@ -1,0 +1,29 @@
+<div class="bagroundLogin">
+  <div class="loginForm" align="center">
+    <form>
+
+
+      <span class="ui-float-label">
+
+        <i id="userNameIcon"></i>
+        <input id="userName" type="text" size="30" pInputText [(ngModel)]="user.name" name="username">
+        <label for="userName">User name</label>
+      </span>
+
+
+      <span class="ui-float-label spPassword">
+        <i id="passwordIcon"></i>
+        <input id="passw" type="{{isPassword == true? 'password':'text'}}" size="30" pInputText [(ngModel)]="user.password" name="passw">
+        <label for="passw">Password</label>
+        <i class="fa fa-fw fa-eye-slash field-icon"
+           (mousedown)="showPassword($event)" (mouseup)="showPassword($event)" title="Show password"></i>
+      </span>
+
+
+      <div class="submitArea">
+        <button id="loginBtn" pButton type="button" icon="pi pi-check" label="Login" (click)="onLogin()" ></button>
+      </div>
+    </form>
+  </div>
+</div>
+<p-toast position="center" [baseZIndex]="5000" [modal]="true"></p-toast>

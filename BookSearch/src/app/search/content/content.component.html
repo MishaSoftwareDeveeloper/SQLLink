@@ -1,0 +1,68 @@
+<p-dataView #dv
+            [value]="books"
+            [paginator]="true"
+            [rows]="20"
+            styleClass="contentGrid"
+            paginatorPosition="both"
+            filterBy="volumeInfo.title">
+  <p-header>
+    <div class="ui-helper-clearfix">
+      <div class="ui-g">
+        <div class="ui-g-12 ui-md-6">
+          <div>
+            <input type="search" pInputText placeholder="Find by name" (keyup)="dv.filter($event.target.value)">
+          </div>
+        </div>
+        <div class="ui-g-6 ui-md-6" style="text-align:right">
+          <p-dataViewLayoutOptions></p-dataViewLayoutOptions>
+        </div>
+      </div>
+    </div>
+  </p-header>
+  <ng-template let-item pTemplate="listItem">
+    <div class="ui-g listItemsContent">
+      <div class="ui-g-12 ui-md-3" style="text-align:center">
+        <img class="Image" src="{{item.volumeInfo.imageLinks.smallThumbnail}}">
+      </div>
+      <div class="ui-g-12 ui-md-8 list-details">
+        <div class="ui-g">
+          <div class="ui-g-3 ui-sm-6">Book name: </div>
+          <div class="ui-g-9 ui-sm-6"><b>{{item.volumeInfo.title}}</b></div>
+          <div class="ui-g-3 ui-sm-6">Publisher name: </div>
+          <div class="ui-g-9 ui-sm-6"><b>{{item.volumeInfo.publisher}}</b></div>
+          <div class="ui-g-3 ui-sm-6">Published date: </div>
+          <div class="ui-g-9 ui-sm-6"><b>{{item.volumeInfo.publishedDate}}</b></div>
+        </div>
+      </div>
+      <div class="ui-g-12 ui-md-1 btnInfoBook">
+        <button pButton type="button" icon="pi pi-info"
+                (click)="onSelectBook($event, item)"></button>
+      </div>
+    </div>
+  </ng-template>
+  <ng-template let-item pTemplate="gridItem">
+    <div style="padding:.5em" class="ui-g-12 ui-md-3">
+      <p-panel [header]="item.volumeInfo.title" [style]="{'text-align':'center'}">
+        <img src="{{item.volumeInfo.imageLinks.smallThumbnail}}" width="60">
+        <hr class="ui-widget-content" style="border-top:0">
+        <button pButton type="button" icon="pi pi-info"
+                (click)="onSelectBook($event, item)" style="margin-top:0"></button>
+      </p-panel>
+    </div>
+  </ng-template>
+</p-dataView>
+
+<p-dialog header="Book Details" [(visible)]="displayDialog" [responsive]="true" showEffect="fade" [modal]="true" [style]="{width: '400px'}" (onAfterHide)="onDialogHide()">
+  <div class="ui-g" *ngIf="selectedBook">
+    <div class="ui-g-12" style="text-align:center">
+      <img src="{{selectedBook.volumeInfo.imageLinks.smallThumbnail}}.png">
+    </div>
+    <div class="ui-g-4">Title: </div>
+    <div class="ui-g-8">{{selectedBook.volumeInfo.title}}</div>
+
+    <div class="ui-g-4">Description: </div>
+    <div class="ui-g-8">{{selectedBook.volumeInfo.description}}</div>
+
+  </div>
+</p-dialog>
+
